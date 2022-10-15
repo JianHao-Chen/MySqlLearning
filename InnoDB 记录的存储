@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-10-15T10:26:53.136Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="wdNDysG9EXg5mW5OSwbb" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-15T11:26:18.351Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="GWAJ8GPm1ex_IxpE2nr4" version="20.4.1" type="github">
   <diagram id="gij_XxDrkwduy-gqeuLE" name="第 1 页">
     <mxGraphModel dx="1038" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="8q1EYtUoDEYECX5_YJlh-3" value="Compact行格式" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="30" width="120" height="40" as="geometry" />
+          <mxGeometry x="340" y="170" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8q1EYtUoDEYECX5_YJlh-4" value="变长字段长度列表" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="360" width="120" height="40" as="geometry" />
@@ -76,9 +76,6 @@
             <mxPoint x="440" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8q1EYtUoDEYECX5_YJlh-21" value="c1&amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp; c2&amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;c3&amp;nbsp; &amp;nbsp;|&amp;nbsp; &amp;nbsp; &amp;nbsp;c4&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&lt;br&gt;----------------------------------------------&lt;br&gt;aaaa&amp;nbsp; |&amp;nbsp; &amp;nbsp; bbb |&amp;nbsp; &amp;nbsp; &amp;nbsp;cc&amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;d&lt;br&gt;eeee&amp;nbsp; |&amp;nbsp; &amp;nbsp; fff&amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp;NULL&amp;nbsp; |&amp;nbsp; &amp;nbsp; &amp;nbsp; NULL" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="215" y="120" width="199" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="8q1EYtUoDEYECX5_YJlh-39" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="480" width="20" height="40" as="geometry" />
         </mxCell>
@@ -139,7 +136,7 @@
         <mxCell id="8q1EYtUoDEYECX5_YJlh-58" value="next_record&lt;br&gt;(16位)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="510" y="480" width="250" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="8q1EYtUoDEYECX5_YJlh-59" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. deleted_flag :&amp;nbsp; 标记记录是否已删除&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. min_rec_flag:&amp;nbsp; B+树的每层非叶子节点中最小的目录项记录会添加此标记&lt;br&gt;3. n_owned&amp;nbsp; &amp;nbsp; &amp;nbsp; :&amp;nbsp; 一个页面中记录分成若干组。每个组有一条记录作为“带头大&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 哥”，这个记录的 n_owned 值代表该组所有记录的条数&lt;br&gt;4. heap_no&amp;nbsp; &amp;nbsp; &amp;nbsp; :&amp;nbsp; 表示当前记录在页面堆中的相对位置&lt;br&gt;5. record_type :&amp;nbsp; 记录的类型。 0表示普通记录 ,&amp;nbsp; 1表示B+树非叶子节点的目录项&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;记录， 2表示&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="8q1EYtUoDEYECX5_YJlh-59" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. deleted_flag :&amp;nbsp; 标记记录是否已删除&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. min_rec_flag:&amp;nbsp; B+树的每层非叶子节点中最小的目录项记录会添加此标记&lt;br&gt;3. n_owned&amp;nbsp; &amp;nbsp; &amp;nbsp; :&amp;nbsp; 一个页面中记录分成若干组。每个组有一条记录作为“带头大&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 哥”，这个记录的 n_owned 值代表该组所有记录的条数&lt;br&gt;4. heap_no&amp;nbsp; &amp;nbsp; &amp;nbsp; :&amp;nbsp; 表示当前记录在页面堆中的相对位置&lt;br&gt;5. record_type :&amp;nbsp; 记录的类型。 0表示普通记录 ,&amp;nbsp; 1表示B+树非叶子节点的目录项&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;记录， 2表示 Infimum 记录， 3表示 Supremum 记录&lt;br&gt;6. next_record :&amp;nbsp; 下一条记录的相对位置&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="360" y="561" width="430" height="159" as="geometry" />
         </mxCell>
       </root>
