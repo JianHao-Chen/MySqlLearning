@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-24T00:33:14.451Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="CwnXo3gLTKkmiAM0FTS5" version="20.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-10-24T00:46:33.563Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="Va-I7gUVblbFTJr4S9k3" version="20.5.1" type="github" pages="4">
   <diagram id="QbIYMgQuhOxnk1jsAOIm" name="InnoDB记录存储结构">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1969,6 +1969,30 @@
         </mxCell>
         <mxCell id="9PTK2R5ZWVY0oH1A5TRv-33" value="&lt;b&gt;链表基节点&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1400" y="25" width="137" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="d3zI1aiqTfGp7-R2DI7D-2" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=14;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="70" width="20" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d3zI1aiqTfGp7-R2DI7D-3" value="指向 XDES Entry链表头节点的指针" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="70" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d3zI1aiqTfGp7-R2DI7D-4" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=14;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="110" width="20" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d3zI1aiqTfGp7-R2DI7D-5" value="指向 XDES Entry链表尾节点的指针" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d3zI1aiqTfGp7-R2DI7D-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=14;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="440" width="20" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d3zI1aiqTfGp7-R2DI7D-7" value="指向前一个 XDES Entry 的指针" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="445" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d3zI1aiqTfGp7-R2DI7D-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=14;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="480" width="20" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d3zI1aiqTfGp7-R2DI7D-9" value="指向后一个 XDES Entry 的指针" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="485" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
